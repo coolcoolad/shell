@@ -1,7 +1,7 @@
 #! /bin/sh
 while true
 do
-	if (ps -ef|grep $1 |grep -v grep)
+	if (ps -ef|grep ssserver |grep -v grep)
     then 
 		echo "-----------------------------------------"
 		echo "DB进程守护: DB服务运行中..." 
@@ -13,7 +13,7 @@ do
 		 echo "DB守护: DB挂了！！！" 
 		 date    
 		 echo "DB守护: 尝试重新启动DB服务..."
-		nohup sh $1 &
+		nohup sh sss.sh &
     	sleep 2
 	fi
 done

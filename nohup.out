@@ -1,0 +1,27 @@
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+-----------------------------------------
+DB守护: DB挂了！！！
+2018年09月23日 22:35:43
+DB守护: 尝试重新启动DB服务...
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+-----------------------------------------
+DB守护: DB挂了！！！
+2018年09月23日 22:35:45
+DB守护: 尝试重新启动DB服务...
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+-----------------------------------------
+DB守护: DB挂了！！！
+2018年09月23日 22:35:48
+DB守护: 尝试重新启动DB服务...
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+-----------------------------------------
+DB守护: DB挂了！！！
+2018年09月23日 22:35:50
+DB守护: 尝试重新启动DB服务...
+sh: sss: No such file or directory
+sh: sss: No such file or directory
+sh: sss: No such file or directory
