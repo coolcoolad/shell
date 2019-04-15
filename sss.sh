@@ -1,1 +1,1 @@
-sudo ssserver -c /home/yajie/shell/ssconfig.json
+sudo ssserver -c ssconfig.json
