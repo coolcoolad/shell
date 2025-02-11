@@ -43,6 +43,10 @@ read -p "/var/run/docker.sock 文件已删除. 按回车键继续..."
 sudo apt-get purge -y nvidia-docker2
 read -p "nvidia-docker2 已卸载. 按回车键继续..."
 
+# 删除 Docker GPU 相关的包
+sudo apt-get purge -y nvidia-container-toolkit
+read -p "nvidia-container-toolkit 已卸载. 按回车键继续..."
+
 sudo apt-get purge -y nvidia-container-runtime
 read -p "nvidia-container-runtime 已卸载. 按回车键继续..."
 

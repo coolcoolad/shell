@@ -1,0 +1,2 @@
+使用ubuntu自带驱动安装器安装驱动
+sudo ubuntu-drivers autoinstall
