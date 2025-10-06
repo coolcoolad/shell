@@ -1,0 +1,13 @@
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo nano /etc/systemd/system/docker.service.d/proxy.conf
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=http://127.0.0.1:7890"
+Environment="NO_PROXY=localhost,127.0.0.1"
+
+
+
+docker run -d --rm   -p 8080:8080   -p 56000-56100:56000-56100/udp   -e NEKO_WEBRTC_EPR=56000-56100   -e NEKO_WEBRTC_NAT1TO1=127.0.0.1   -e NEKO_MEMBER_MULTIUSER_USER_PASSWORD=neko   -e NEKO_MEMBER_MULTIUSER_ADMIN_PASSWORD=admin -e HTTP_PROXY=http://172.17.0.1:20172 -e HTTPS_PROXY=http://172.17.0.1:20172 -e NO_PROXY=localhost,127.0.0.1  ghcr.io/m1k1o/neko/firefox:latest
+
+
+socat TCP-LISTEN:20172,bind=172.17.0.1,fork TCP:127.0.0.1:20172
